@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-error-container': '#93000a', 'surface-container-lowest': '#ffffff', 'outline': '#6c7a71', 'primary': '#006c49', 'on-tertiary-container': '#00413c', 'tertiary-fixed-dim': '#80d5cb', 'surface-container': '#e9edff', 'on-tertiary-fixed-variant': '#00504a', 'deep-forest': '#064E3B', 'error-container': '#ffdad6', 'secondary': '#855300', 'surface-dim': '#d3daef', 'on-background': '#141b2b', 'secondary-fixed': '#ffddb8', 'primary-fixed-dim': '#4edea3', 'surface-container-low': '#f1f3ff', 'feedback-error': '#EF4444', 'background': '#f9f9ff', 'surface-container-highest': '#dce2f7', 'error': '#ba1a1a', 'solar-gold': '#FFB300', 'on-secondary': '#ffffff', 'on-error': '#ffffff', 'on-surface': '#141b2b', 'secondary-container': '#fea619', 'surface-variant': '#dce2f7', 'secondary-fixed-dim': '#ffb95f', 'mint-bg': '#F0FDF4', 'surface': '#f9f9ff', 'tertiary-container': '#5bb1a8', 'surface-bright': '#f9f9ff', 'on-primary-container': '#00422b', 'on-primary': '#ffffff', 'on-tertiary': '#ffffff', 'on-secondary-container': '#684000', 'primary-container': '#10b981', 'on-primary-fixed': '#002113', 'on-secondary-fixed-variant': '#653e00', 'feedback-info': '#3B82F6', 'teal-dark': '#0F766E', 'on-tertiary-fixed': '#00201d', 'feedback-success': '#10B981', 'tertiary-fixed': '#9cf2e8', 'on-primary-fixed-variant': '#005236', 'surface-container-high': '#e1e8fd', 'on-secondary-fixed': '#2a1700', 'inverse-on-surface': '#edf0ff', 'inverse-primary': '#4edea3', 'outline-variant': '#bbcabf', 'primary-fixed': '#6ffbbe', 'surface-white': '#FFFFFF', 'on-surface-variant': '#3c4a42', 'surface-tint': '#006c49', 'tertiary': '#006a63', 'inverse-surface': '#293040' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'gutter': '1rem', 'space-lg': '1.5rem', 'margin': '1.25rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-md': '1rem' }, 'fontFamily': { 'headline-sm': ['Plus Jakarta Sans'], 'label-ipa': ['Space Mono'], 'body-sm': ['Inter'], 'headline-lg': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Plus Jakarta Sans'], 'display-hero': ['Plus Jakarta Sans'], 'label-caption': ['Inter'], 'headline-md': ['Plus Jakarta Sans'], 'body-md': ['Inter'], 'body-lg': ['Inter'], 'label-badge': ['Plus Jakarta Sans'] }, 'fontSize': { 'headline-sm': ['16px', { lineHeight: '22px', fontWeight: '700' }], 'label-ipa': ['15px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '500' }], 'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.02em', fontWeight: '800' }], 'display-hero-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '800' }], 'display-hero': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'label-caption': ['11px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '700' }], 'body-md': ['15px', { lineHeight: '22px', fontWeight: '400' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'label-badge': ['12px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '700' }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;background-color:#F0FDF4;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-mint-bg text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-white/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm max-w-lg mx-auto"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Learn English Basic App Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMsbGsjGz3n3_SLdm2lABcPp8n04rwpfU0GWkbH3oPZAJGx-mou1WL4-XNNQ2c0n6McD3b4HE-QNHUQYh_iKAmWx5uxcthsQR-IKqUAz4ScBoN_p5BcNRMn9XpI8FRkl2K4frGya3hjwoX6wTZJCCGhGLCiLwjJCqYcs4TW4lb-89heC-I82yTXJW-H1i2-_rt_rL_xcJy_-cVffTWCbQZ7qYfO0K0ZdGqjsyazKSb"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Lesson Session</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Audio Pronunciation" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Q6E8YRHB5JaBycdAbk01msX6A2-EH7Kr1gCu5Ggank_GO8Ld5qsKpRqAjMvWihgnf5Y892Gblyik1QVWd_8lMCFY23CRafO-MJ6L3j7YwFO1zYqhhbtz8U2fpXH1w1Y6MZNu25Y6GSytZhfci9PqLCPFtUDCtw-G_pGJzqDlkde7jr6q_tyPhprolC9HD6aCBlGiEhYef5LmgoqjlIwPhQ88Ddw2-xmPa4ZUyhtC"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe px-margin bg-mint-bg max-w-lg mx-auto min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Session Meta Bar -->
+<section class="flex flex-col gap-space-sm pt-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-container/15 text-primary">
+<span class="material-symbols-outlined text-[18px]">quiz</span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Bài 03: Numbers &amp; Colors</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Level A1 • Unit 1</span>
+</div>
+</div>
+<!-- Streak Badge -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-solar-gold/20 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-badge text-label-badge text-secondary font-bold">7 Ngày</span>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="font-label-caption text-label-caption font-semibold">Tiến độ bài học</span>
+<span class="font-label-badge text-label-badge text-primary">Step 9/10 (90%)</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container-high overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container to-primary transition-all duration-500 shadow-sm" style="width: 90%;"></div>
+</div>
+</div>
+</section>
+<!-- 5 Skill Modes Tabs Bar -->
+<section class="w-full overflow-x-auto no-scrollbar mb-space-lg -mx-margin px-margin">
+<div class="flex items-center gap-2 min-w-max pb-1">
+<!-- Mode 1 -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-white text-on-surface-variant shadow-sm transition-transform active:scale-95" type="button">
+<span class="text-[14px]">📖</span>
+<span class="font-label-badge text-label-badge">Learn</span>
+</button>
+<!-- Mode 2 -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-white text-on-surface-variant shadow-sm transition-transform active:scale-95" type="button">
+<span class="text-[14px]">🎴</span>
+<span class="font-label-badge text-label-badge">Flashcard</span>
+</button>
+<!-- Mode 3 -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-white text-on-surface-variant shadow-sm transition-transform active:scale-95" type="button">
+<span class="text-[14px]">🎧</span>
+<span class="font-label-badge text-label-badge">Listening</span>
+</button>
+<!-- Mode 4 -->
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-white text-on-surface-variant shadow-sm transition-transform active:scale-95" type="button">
+<span class="text-[14px]">🎙️</span>
+<span class="font-label-badge text-label-badge">Speaking</span>
+</button>
+<!-- Mode 5: Active Highlight -->
+<button class="relative flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-on-primary shadow-md transition-transform active:scale-95" type="button">
+<span class="text-[14px]">🧪</span>
+<span class="font-label-badge text-label-badge">Quiz Mode</span>
+<span class="absolute -top-2 -right-1 px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-caption text-[9px] shadow-sm tracking-wider uppercase">
+          Thử thách cuối
+        </span>
+</button>
+</div>
+</section>
+<!-- Streak Celebration Combo Banner -->
+<section class="relative overflow-hidden w-full rounded-2xl bg-gradient-to-r from-secondary-container via-solar-gold to-secondary-container p-3 mb-space-lg shadow-md text-on-secondary-container">
+<div class="flex items-center gap-3 relative z-10">
+<div class="w-10 h-10 rounded-xl bg-surface-white/40 backdrop-blur-sm flex items-center justify-center shrink-0 shadow-inner text-xl">
+        🎉
+      </div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-secondary-container">Chuỗi 5 câu chuẩn xác!</span>
+<span class="text-xs">🔥</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container opacity-90 truncate">Combo nhân đôi điểm: +50 XP thưởng</p>
+</div>
+<div class="shrink-0 px-2.5 py-1 rounded-full bg-surface-white text-secondary font-label-badge text-label-badge shadow-sm">
+        +50 XP
+      </div>
+</div>
+<!-- Subtle playful ambient circles -->
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-surface-white/20 rounded-full blur-sm"></div>
+<div class="absolute right-12 top-0 w-8 h-8 bg-surface-white/20 rounded-full blur-xs"></div>
+</section>
+<!-- Challenge Card 1: Multiple-choice Visual Quiz -->
+<section class="w-full rounded-3xl bg-surface-white p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-label-caption text-label-caption text-primary">Câu hỏi 1</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Chọn tranh tương ứng</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+          "Green Apple" nghĩa là gì?
+        </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Quả táo xanh)</span>
+</div>
+<button aria-label="Nghe phát âm Green Apple" class="w-10 h-10 rounded-full bg-primary-container/15 flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<!-- 4 Visual Choices Grid -->
+<div class="grid grid-cols-2 gap-3" id="visual-quiz-group">
+<!-- Option A -->
+<button class="group relative flex flex-col items-center p-2.5 rounded-[20px] bg-surface-container-lowest shadow-sm text-left transition-all active:scale-95 focus:outline-none" type="button">
+<div class="w-full h-24 rounded-2xl overflow-hidden bg-surface-container-high mb-2">
+<img alt="Red Strawberry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A fresh vibrant red strawberry with dew drops resting on a pristine bright kitchen surface, illuminated with soft studio daylight, clean minimal educational focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLKeJvTs2Apd9Ss9m-2Ci4wH7ZksPTnwHBOJWajLzKDdfIZwvGsKBrZf6YP7appZZ7mV75DWOWEGXhznn1-vgL8nm3m_aLUYR9C_7MvHh5gyrnp0aWrkYwvSQuZjUbJkXLQdTmNzo3YcUHxknTCf4i5Ge7UZ8-VuYrRXeyhbR1Mfa2ZA2_feEqTFvlEyf-NTHgG_5u3EAKr_62ysJIWqY-XBLY-TEItLbrns7SJ3Jl"/>
+</div>
+<div class="w-full flex items-center justify-between px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Red Strawberry</span>
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center text-[11px] font-bold text-on-surface-variant">A</span>
+</div>
+</button>
+<!-- Option B (Selected State) -->
+<button class="relative flex flex-col items-center p-2.5 rounded-[20px] bg-mint-bg shadow-md text-left transition-all scale-[1.02] focus:outline-none" type="button">
+<div class="absolute -top-1.5 -right-1.5 z-10 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="w-full h-24 rounded-2xl overflow-hidden bg-surface-container-high mb-2 relative">
+<img alt="Green Apple" class="w-full h-full object-cover" data-alt="A fresh crispy green granny smith apple with water droplets on a serene mint background, bright sunny lighting, clean high definition educational food photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCFcUKyo13nVWBkU3B480m49u-XBnUCtmWgGQkRuNtt03cSXN4_MPMmFQ_SKwQU4VglEvOE5e5kX2SWz9ULD-7s5rJW7sdkBRE795mh_pYcujH2aHvpPPfrM0KjclDmnMigcecO110LsPukfdcSrzYO5lqlVMPJcuPXUjrZyOjNgFnBgeKi-HNWVPqIBAf0HZjOJQ5LQ20DDG0IfVPclwPpKPPOzmBN20WFlXEmrah"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="w-full flex items-center justify-between px-1">
+<span class="font-body-sm text-body-sm font-bold text-primary">Green Apple</span>
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px] font-bold shadow-xs">B</span>
+</div>
+</button>
+<!-- Option C -->
+<button class="group relative flex flex-col items-center p-2.5 rounded-[20px] bg-surface-container-lowest shadow-sm text-left transition-all active:scale-95 focus:outline-none" type="button">
+<div class="w-full h-24 rounded-2xl overflow-hidden bg-surface-container-high mb-2">
+<img alt="Yellow Banana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A single ripe bright yellow banana curved elegantly on a minimal neutral pastel setting, bright clean studio product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-yFpXixoTmE9g2WcG5ozuhPUvbqNVXZKTqz2JhwEkic-vat9thREG6UcuDmm3Xj0Edn-Iv0_OiK-kgyD0sW7QiGQAcN9EPpVgQZPuZihJarDcvVZKPTjlx3IChFj5VybsNRmemOjBTbsu7mG8CoMmes30I09Y1dxQmVLfB8fiX1xXqMzAhIOil5yJ5lUiqB4tmuqowC2yd-8msu6aUoZ4n2nVC1KLpuBnFJHj7vev"/>
+</div>
+<div class="w-full flex items-center justify-between px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Yellow Banana</span>
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center text-[11px] font-bold text-on-surface-variant">C</span>
+</div>
+</button>
+<!-- Option D -->
+<button class="group relative flex flex-col items-center p-2.5 rounded-[20px] bg-surface-container-lowest shadow-sm text-left transition-all active:scale-95 focus:outline-none" type="button">
+<div class="w-full h-24 rounded-2xl overflow-hidden bg-surface-container-high mb-2">
+<img alt="Blueberry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A cluster of plump ripe dark blueberries resting softly together, fine morning backlight, crisp organic detail against a clean studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkLlHNKzc3xSusE2WqmShZWmFHuWY1-OYVHfjQQfLqbXERhU6eRLxVP5SoZqwbpIkjGl0A969OF_36pY9pW4yFr2sQpL9LdS7n6MEUE63oZx-HkPqecEUSHbIAAdDLQoI2cBd4-kD0MDQW8lTiARtDIwOW-Q-KGmsFDMCs0hpeOlHppqQ6uEUgDCAUra5hxUO1Lvuy9q4CMp-KhWUDb-8ak5TSR3AvvwT72kDyX9Jo"/>
+</div>
+<div class="w-full flex items-center justify-between px-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Blueberry</span>
+<span class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center text-[11px] font-bold text-on-surface-variant">D</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Challenge Card 2: Word Bubble Assembly -->
+<section class="w-full rounded-3xl bg-surface-white p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high font-label-caption text-label-caption text-primary">Câu hỏi 2</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Sắp xếp câu</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+          Ghép các khối từ để tạo thành câu:
+        </h2>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold mt-0.5">"Tôi thích màu xanh lá"</span>
+</div>
+<button aria-label="Nghe câu mẫu" class="w-10 h-10 rounded-full bg-primary-container/15 flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<!-- Drop Zone Target Area -->
+<div class="w-full min-h-[96px] rounded-2xl bg-surface-container-low p-3.5 flex flex-wrap items-center gap-2 relative">
+<!-- Active Filled Word Bubbles -->
+<button class="group flex items-center gap-1 px-3.5 py-2 rounded-2xl bg-surface-white text-on-surface shadow-sm active:scale-95 transition-all" type="button">
+<span class="font-headline-sm text-headline-sm">I</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-feedback-error">close</span>
+</button>
+<button class="group flex items-center gap-1 px-3.5 py-2 rounded-2xl bg-surface-white text-on-surface shadow-sm active:scale-95 transition-all" type="button">
+<span class="font-headline-sm text-headline-sm">like</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-feedback-error">close</span>
+</button>
+<button class="group flex items-center gap-1 px-3.5 py-2 rounded-2xl bg-surface-white text-primary shadow-sm active:scale-95 transition-all" type="button">
+<span class="font-headline-sm text-headline-sm font-bold">green</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-feedback-error">close</span>
+</button>
+<button class="group flex items-center gap-1 px-3.5 py-2 rounded-2xl bg-surface-white text-on-surface shadow-sm active:scale-95 transition-all" type="button">
+<span class="font-headline-sm text-headline-sm">color</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-feedback-error">close</span>
+</button>
+<!-- Slot indicator placeholders -->
+<div class="h-9 w-12 rounded-xl bg-surface-container flex items-center justify-center">
+<span class="w-4 h-0.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+<!-- Phonetic & Translation Helper Note -->
+<div class="flex items-center gap-2 px-1">
+<span class="font-label-ipa text-label-ipa text-tertiary">/aɪ laɪk ɡriːn ˈkʌl.ər/</span>
+</div>
+<!-- Bank of Word Chips / Bubbles to pick -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Từ vựng khả dụng:</span>
+<div class="flex flex-wrap gap-2.5">
+<!-- Disabled/Placed Chips -->
+<div class="px-4 py-2.5 rounded-2xl bg-surface-container-high text-on-surface-variant/40 font-headline-sm text-headline-sm select-none">
+          I
+        </div>
+<div class="px-4 py-2.5 rounded-2xl bg-surface-container-high text-on-surface-variant/40 font-headline-sm text-headline-sm select-none">
+          like
+        </div>
+<div class="px-4 py-2.5 rounded-2xl bg-surface-container-high text-on-surface-variant/40 font-headline-sm text-headline-sm select-none">
+          green
+        </div>
+<div class="px-4 py-2.5 rounded-2xl bg-surface-container-high text-on-surface-variant/40 font-headline-sm text-headline-sm select-none">
+          color
+        </div>
+<!-- Available unselected distractors -->
+<button class="px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm shadow-sm active:scale-90 transition-transform" type="button">
+          red
+        </button>
+<button class="px-4 py-2.5 rounded-2xl bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm shadow-sm active:scale-90 transition-transform" type="button">
+          three
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Mini Feedback Strip -->
+<section class="flex items-center justify-between p-3.5 rounded-2xl bg-surface-container-low shadow-sm mb-space-lg">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-bold text-on-surface">Độ chính xác hiện tại: 100%</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Sẵn sàng hoàn thành toàn bộ bài 03!</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">+100 XP</span>
+</section>
+<!-- Sticky Bottom Action Dock -->
+<aside class="fixed bottom-4 left-0 right-0 max-w-lg mx-auto px-margin z-40 pointer-events-none">
+<div class="pointer-events-auto w-full p-2 rounded-3xl bg-surface-white/90 backdrop-blur-xl shadow-lg flex items-center gap-3">
+<!-- Secondary Retry Action -->
+<button aria-label="Làm lại câu này" class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform shrink-0" type="button">
+<span class="material-symbols-outlined text-[22px]">replay</span>
+</button>
+<!-- Primary Big Glowing CTA Button -->
+<button class="flex-1 h-14 rounded-full bg-gradient-to-r from-primary-container to-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-primary-container/40 active:scale-95 transition-all" id="complete-lesson-btn" type="button">
+<span>Hoàn thành bài học 3</span>
+<span class="text-xl">🎉</span>
+</button>
+</div>
+</aside>
+</div>
+<script>
+  (function() {
+    const btn = document.getElementById('complete-lesson-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      btn.innerHTML = '<span>Đang tính điểm...</span> <span class="material-symbols-outlined animate-spin text-[20px]">sync</span>';
+      setTimeout(function() {
+        btn.innerHTML = '<span>Hoàn tất xuất sắc!</span> <span class="text-xl">🌟</span>';
+        btn.classList.remove('from-primary-container', 'to-primary');
+        btn.classList.add('bg-deep-forest');
+      }, 750);
+    });
+  })();
+</script></main></body></html>

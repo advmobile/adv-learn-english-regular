@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-tertiary-fixed-variant": "#653e00",
+          "surface-container-lowest": "#00110c",
+          "secondary": "#4fdbc8",
+          "on-surface-variant": "#bbcabf",
+          "inverse-surface": "#c2ebdc",
+          "surface-container": "#00251c",
+          "primary-fixed": "#6ffbbe",
+          "primary-fixed-dim": "#4edea3",
+          "on-secondary": "#003731",
+          "on-primary": "#003824",
+          "on-surface": "#c2ebdc",
+          "on-secondary-fixed": "#00201c",
+          "surface-tint": "#4edea3",
+          "secondary-container": "#04b4a2",
+          "error": "#ffb4ab",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-secondary-container": "#003f38",
+          "on-primary-container": "#00422b",
+          "surface": "#001711",
+          "tertiary-fixed": "#ffddb8",
+          "primary": "#4edea3",
+          "surface-container-highest": "#143b30",
+          "surface-container-low": "#002018",
+          "surface-container-high": "#073026",
+          "secondary-fixed-dim": "#4fdbc8",
+          "on-primary-fixed-variant": "#005236",
+          "background": "#001711",
+          "secondary-fixed": "#71f8e4",
+          "on-error": "#690005",
+          "on-primary-fixed": "#002113",
+          "on-tertiary-container": "#523200",
+          "on-secondary-fixed-variant": "#005048",
+          "on-tertiary": "#472a00",
+          "tertiary": "#ffb95f",
+          "outline": "#86948a",
+          "inverse-primary": "#006c49",
+          "on-error-container": "#ffdad6",
+          "surface-variant": "#143b30",
+          "on-tertiary-fixed": "#2a1700",
+          "surface-bright": "#194035",
+          "surface-dim": "#001711",
+          "primary-container": "#10b981",
+          "error-container": "#93000a",
+          "outline-variant": "#3c4a42",
+          "tertiary-container": "#e29100",
+          "on-background": "#c2ebdc",
+          "inverse-on-surface": "#0f372c"
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "2xl": "1rem",
+          "3xl": "1.5rem",
+          "full": "9999px"
+        },
+        spacing: {
+          "gutter-desktop": "2rem",
+          "margin-desktop": "3rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem",
+          "margin-tablet": "2rem",
+          "margin": "1.25rem",
+          "gutter": "1rem",
+          "space-md": "1rem",
+          "space-xl": "2rem",
+          "gutter-tablet": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        fontFamily: {
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Inter", "sans-serif"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "display-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Inter", "sans-serif"],
+          "display-lg-mobile": ["Plus Jakarta Sans"],
+          "body-md": ["Inter", "sans-serif"],
+          "label-lg": ["Plus Jakarta Sans"]
+        }
+      }
+    }
+  };</script><style>
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior-y: none;
+    background-color: #001711;
+  }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+::-webkit-scrollbar { display: none; }
+</style></head><body class="bg-[#001711] text-[#c2ebdc] flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed relative overflow-x-hidden">
+<!-- Ambient Glowing Emerald Glow Orbs -->
+<div class="fixed top-[-100px] left-1/2 -translate-x-1/2 w-[340px] h-[340px] bg-emerald-500/15 rounded-full blur-[110px] pointer-events-none z-0"></div>
+<div class="fixed top-[45%] -right-24 w-[280px] h-[280px] bg-teal-500/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
+<div class="fixed bottom-10 -left-20 w-[260px] h-[260px] bg-emerald-600/15 rounded-full blur-[100px] pointer-events-none z-0"></div>
+<main class="flex flex-col relative z-10 w-full pt-safe pb-safe px-margin bg-transparent max-w-lg mx-auto min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Top App Brand Bar -->
+<header class="flex items-center justify-between py-3">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl bg-[#064e3b]/80 border border-emerald-500/30 shadow-lg shadow-emerald-950/60 flex items-center justify-center p-1.5 overflow-hidden backdrop-blur-md">
+<img alt="Logo Learn English Basic" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UpD-G-hxdQ1NgmPq-Ml8bniy42rEOZ_nNyopgvedwQ9APJUAqJQihYV_WmPHRllILJQGe8StC-D7OEYNGRuBH_JITHp78qLRwnHtWN2TOchDhvdmiGWy-wFKZ1XZpBt0n48BqvI7tirjaEBx3vT9WPW5JgUA3HIyY-Ymj-8vcl5qEjEkBLNELhl3P4-f4bMuMItkBAcW8JSQtDOz-YidxUnJLDUrNhF5h-NxMyUcAEBugvzrrDX-A6AB03"/>
+</div>
+<div>
+<h1 class="font-headline-sm text-base text-white tracking-tight leading-none font-bold">Learn English Basic</h1>
+<p class="text-xs text-[#a7f3d0] mt-1 font-medium">Bắt đầu dễ dàng cùng mầm xanh</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-[#064e3b]/70 border border-amber-400/30 px-3 py-1.5 rounded-full shadow-lg shadow-black/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-[#ffb95f] text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-xs text-[#ffddb8] font-bold tracking-wide">A1-A2</span>
+</div>
+</header>
+<!-- Hero Welcome Card -->
+<section class="mt-3 relative overflow-hidden rounded-3xl backdrop-blur-xl bg-[#064e3b]/40 border border-emerald-500/25 p-5 shadow-xl shadow-emerald-950/50">
+<div class="flex flex-col gap-3 relative z-10">
+<div class="inline-flex items-center gap-2 self-start bg-emerald-500/15 border border-emerald-400/30 px-3 py-1 rounded-full backdrop-blur-md">
+<span class="material-symbols-outlined text-[#4edea3] text-base" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-headline-sm text-[11px] text-[#6ee7b7] font-bold tracking-wider">KHỞI ĐẦU TỰ NHIÊN</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-2xl text-white font-extrabold leading-tight">Tiếng Anh nền tảng cho người mới bắt đầu</h2>
+<p class="font-body-md text-sm text-[#bbcabf] mt-2 leading-relaxed">Lộ trình học trực quan qua hình ảnh, luyện phản xạ nghe nói từng bước nhẹ nhàng mỗi ngày.</p>
+</div>
+<!-- Feature Pill Badges -->
+<div class="flex flex-wrap gap-2 pt-1">
+<div class="flex items-center gap-1.5 bg-[#00251c]/70 border border-emerald-500/20 px-2.5 py-1.5 rounded-xl shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[#4edea3] text-base">menu_book</span>
+<span class="text-xs text-[#e6fbf3] font-semibold">Từ vựng thiết thực</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#00251c]/70 border border-emerald-500/20 px-2.5 py-1.5 rounded-xl shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[#4edea3] text-base">mic</span>
+<span class="text-xs text-[#e6fbf3] font-semibold">Chấm điểm phát âm</span>
+</div>
+<div class="flex items-center gap-1.5 bg-[#00251c]/70 border border-emerald-500/20 px-2.5 py-1.5 rounded-xl shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[#ffb95f] text-base">headset</span>
+<span class="text-xs text-[#e6fbf3] font-semibold">Nghe chuẩn Anh-Mỹ</span>
+</div>
+</div>
+</div>
+<!-- Ambient Hero Illustration Slot -->
+<div class="mt-4 w-full h-36 rounded-2xl overflow-hidden relative border border-emerald-500/20 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A modern vibrant 3D stylized rendering of a glowing green plant sprouting from an open book, surrounded by floating headphones, golden sparkles, microphone and playful educational elements, emerald green and warm amber lighting on mint clean studio background, minimal editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcK2JRoK-LpaEQEXR5KcIqBiixAa63a6-xdK-3GGgKtgUqwiZdChws7OavjimQDlmdTHo3At0ris4ocIIjjL3uT2uXwFrmKXLUHJNgiGNpdtONNdYyq0nuLCemCLO3-5pktdx9wWr3Lc71yU2a3X6_0mnZpWgGVEi0k6_ihHGRbY-MTiW-lybplVS4qb21tbbWEdSbREk8MbJVh5tA-9AYbrVw0V-ltbtzSMYJfZul"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#001711]/90 via-[#001711]/40 to-transparent flex items-end p-3.5">
+<span class="text-xs text-white font-medium drop-shadow flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Hơn 500+ bài học ngắn gọn, dễ nhớ
+          </span>
+</div>
+</div>
+</section>
+<!-- Section: Daily Goal Setting -->
+<section class="mt-6 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-lg text-white font-bold tracking-tight">Mục tiêu học mỗi ngày</h3>
+<p class="text-xs text-[#9ca3af] mt-0.5">Chọn thời lượng phù hợp với nhịp sống của bạn</p>
+</div>
+<span class="text-[11px] text-[#6ee7b7] bg-[#064e3b]/60 border border-emerald-500/20 px-2.5 py-1 rounded-full font-semibold backdrop-blur-md">Có thể đổi sau</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5" id="goal-options-group">
+<!-- 5 Mins Option -->
+<button class="goal-card text-left p-3.5 rounded-2xl backdrop-blur-xl bg-[#064e3b]/30 border border-emerald-500/15 shadow-lg shadow-black/20 transition-all duration-200 active:scale-95 flex flex-col justify-between h-28 relative hover:border-emerald-500/30" onclick="selectGoal(this, '5')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="text-2xl filter drop-shadow">🌱</span>
+<span class="status-indicator w-5 h-5 rounded-full bg-[#00251c] border border-emerald-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-[#86948a] hidden">check</span>
+</span>
+</div>
+<div>
+<span class="font-headline-sm text-sm text-white font-bold block">5 phút / ngày</span>
+<span class="text-xs text-[#9ca3af]">Thảnh thơi</span>
+</div>
+</button>
+<!-- 10 Mins Option (Default Selected) -->
+<button class="goal-card is-selected text-left p-3.5 rounded-2xl backdrop-blur-xl bg-[#064e3b]/80 border-2 border-[#4edea3] shadow-xl shadow-emerald-950/60 ring-1 ring-[#4edea3]/30 transition-all duration-200 active:scale-95 flex flex-col justify-between h-28 relative" onclick="selectGoal(this, '10')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="text-2xl filter drop-shadow">🌿</span>
+<span class="status-indicator w-5 h-5 rounded-full bg-[#10b981] text-[#002113] shadow-sm shadow-emerald-400/40 flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-xs font-bold">check</span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-sm text-white font-bold block">10 phút / ngày</span>
+</div>
+<span class="text-xs text-[#6ee7b7] font-semibold">Tiêu chuẩn</span>
+</div>
+<div class="absolute -top-2 right-2 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-2 py-0.5 rounded-full shadow-md shadow-amber-900/40 text-[10px] font-bold tracking-wide uppercase">
+          Khuyên dùng
+        </div>
+</button>
+<!-- 15 Mins Option -->
+<button class="goal-card text-left p-3.5 rounded-2xl backdrop-blur-xl bg-[#064e3b]/30 border border-emerald-500/15 shadow-lg shadow-black/20 transition-all duration-200 active:scale-95 flex flex-col justify-between h-28 relative hover:border-emerald-500/30" onclick="selectGoal(this, '15')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="text-2xl filter drop-shadow">🌳</span>
+<span class="status-indicator w-5 h-5 rounded-full bg-[#00251c] border border-emerald-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-[#86948a] hidden">check</span>
+</span>
+</div>
+<div>
+<span class="font-headline-sm text-sm text-white font-bold block">15 phút / ngày</span>
+<span class="text-xs text-[#9ca3af]">Tăng tốc</span>
+</div>
+</button>
+<!-- 30 Mins Option -->
+<button class="goal-card text-left p-3.5 rounded-2xl backdrop-blur-xl bg-[#064e3b]/30 border border-emerald-500/15 shadow-lg shadow-black/20 transition-all duration-200 active:scale-95 flex flex-col justify-between h-28 relative hover:border-emerald-500/30" onclick="selectGoal(this, '30')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="text-2xl filter drop-shadow">⚡</span>
+<span class="status-indicator w-5 h-5 rounded-full bg-[#00251c] border border-emerald-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-[#86948a] hidden">check</span>
+</span>
+</div>
+<div>
+<span class="font-headline-sm text-sm text-white font-bold block">30 phút / ngày</span>
+<span class="text-xs text-[#9ca3af]">Chuyên sâu</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Section: Starting Level Selector -->
+<section class="mt-6 flex flex-col gap-3">
+<div>
+<h3 class="font-headline-md text-lg text-white font-bold tracking-tight">Trình độ hiện tại của bạn</h3>
+<p class="text-xs text-[#9ca3af] mt-0.5">Để ứng dụng cá nhân hoá bài học đầu tiên</p>
+</div>
+<div class="flex flex-col gap-2.5" id="level-options-group">
+<!-- Level 0 Option (Active) -->
+<button class="level-card is-selected w-full text-left p-4 rounded-2xl backdrop-blur-xl bg-[#064e3b]/75 border-2 border-[#4edea3] shadow-xl shadow-emerald-950/50 ring-1 ring-[#4edea3]/30 transition-all duration-200 active:scale-98 flex items-center gap-3.5" onclick="selectLevel(this)" type="button">
+<div class="w-10 h-10 rounded-xl bg-[#10b981] text-[#002113] flex items-center justify-center shrink-0 shadow-md shadow-emerald-500/30">
+<span class="material-symbols-outlined text-xl">spa</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-sm text-white font-bold">Bắt đầu từ con số 0</span>
+<span class="text-[10px] font-bold bg-amber-500/20 text-[#ffb95f] border border-amber-400/30 px-1.5 py-0.5 rounded">Phù hợp nhất</span>
+</div>
+<p class="text-xs text-[#a7f3d0] mt-0.5 truncate font-medium">Học từ bảng chữ cái, phát âm căn bản, số đếm</p>
+</div>
+<div class="level-radio w-6 h-6 rounded-full bg-[#10b981] text-[#002113] flex items-center justify-center shrink-0 shadow-sm shadow-emerald-400/40">
+<span class="material-symbols-outlined text-sm font-bold">done</span>
+</div>
+</button>
+<!-- Level 1 Option -->
+<button class="level-card w-full text-left p-4 rounded-2xl backdrop-blur-xl bg-[#064e3b]/30 border border-emerald-500/15 shadow-lg shadow-black/20 transition-all duration-200 active:scale-98 flex items-center gap-3.5 hover:border-emerald-500/30" onclick="selectLevel(this)" type="button">
+<div class="w-10 h-10 rounded-xl bg-[#00251c] border border-emerald-500/20 text-[#bbcabf] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-headline-sm text-sm text-white font-bold block">Đã biết từ &amp; mẫu câu cơ bản</span>
+<p class="text-xs text-[#9ca3af] mt-0.5 truncate">Ôn luyện nhanh và học ghép câu giao tiếp</p>
+</div>
+<div class="level-radio w-6 h-6 rounded-full bg-[#00251c] border border-emerald-500/20 text-[#86948a] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm hidden">done</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Interactive Habit Preview Widget -->
+<section class="mt-5 p-3.5 rounded-2xl backdrop-blur-xl bg-[#064e3b]/50 border border-emerald-500/20 shadow-lg shadow-emerald-950/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-[#ffb95f] shadow-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<span class="text-xs text-white font-bold block">Cam kết chuỗi học tập (Streak)</span>
+<span class="text-[11px] text-[#9ca3af]">Chỉ cần hoàn thành bài học mỗi ngày</span>
+</div>
+</div>
+<div class="bg-[#00251c]/80 border border-emerald-500/25 px-2.5 py-1 rounded-full backdrop-blur-md">
+<span class="text-xs text-[#4edea3] font-bold tracking-wide">+10 XP/ngày</span>
+</div>
+</section>
+<!-- Sticky CTA Dock -->
+<div class="mt-6 flex flex-col gap-3">
+<button class="w-full h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-500/30 flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer font-bold tracking-wide hover:brightness-105" onclick="handleStartLearning()" type="button">
+<span class="font-headline-md text-base text-white font-extrabold tracking-wider">BẮT ĐẦU HỌC NGAY</span>
+<span class="material-symbols-outlined text-xl text-white">arrow_forward</span>
+</button>
+<button class="w-full py-2.5 text-center transition-opacity active:opacity-70 cursor-pointer" type="button">
+<span class="text-xs text-[#a7f3d0] font-semibold hover:text-white transition-colors">Tôi đã có tài khoản sẵn</span>
+</button>
+</div>
+</div>
+<script>
+  function selectGoal(element, minutes) {
+    const allGoalCards = document.querySelectorAll('.goal-card');
+    allGoalCards.forEach(card => {
+      card.classList.remove('is-selected', 'bg-[#064e3b]/80', 'border-2', 'border-[#4edea3]', 'ring-1', 'ring-[#4edea3]/30');
+      card.classList.add('bg-[#064e3b]/30', 'border', 'border-emerald-500/15');
+      
+      const sub = card.querySelector('.text-xs');
+      if (sub && !card.querySelector('.uppercase')) {
+        sub.classList.remove('text-[#6ee7b7]', 'font-semibold');
+        sub.classList.add('text-[#9ca3af]');
+      }
+      
+      const indicator = card.querySelector('.status-indicator');
+      if (indicator) {
+        indicator.classList.remove('bg-[#10b981]', 'text-[#002113]', 'shadow-sm', 'shadow-emerald-400/40', 'font-bold');
+        indicator.classList.add('bg-[#00251c]', 'border', 'border-emerald-500/20');
+        const check = indicator.querySelector('.material-symbols-outlined');
+        if (check) check.classList.add('hidden');
+      }
+    });
+
+    element.classList.add('is-selected', 'bg-[#064e3b]/80', 'border-2', 'border-[#4edea3]', 'ring-1', 'ring-[#4edea3]/30');
+    element.classList.remove('bg-[#064e3b]/30', 'border-emerald-500/15');
+    
+    const activeSub = element.querySelectorAll('.text-xs');
+    activeSub.forEach(s => {
+      if (!s.classList.contains('uppercase')) {
+        s.classList.remove('text-[#9ca3af]');
+        s.classList.add('text-[#6ee7b7]', 'font-semibold');
+      }
+    });
+
+    const activeIndicator = element.querySelector('.status-indicator');
+    if (activeIndicator) {
+      activeIndicator.classList.add('bg-[#10b981]', 'text-[#002113]', 'shadow-sm', 'shadow-emerald-400/40', 'font-bold');
+      activeIndicator.classList.remove('bg-[#00251c]', 'border', 'border-emerald-500/20');
+      const check = activeIndicator.querySelector('.material-symbols-outlined');
+      if (check) check.classList.remove('hidden');
+    }
+  }
+
+  function selectLevel(element) {
+    const allLevelCards = document.querySelectorAll('.level-card');
+    allLevelCards.forEach(card => {
+      card.classList.remove('is-selected', 'bg-[#064e3b]/75', 'border-2', 'border-[#4edea3]', 'ring-1', 'ring-[#4edea3]/30');
+      card.classList.add('bg-[#064e3b]/30', 'border', 'border-emerald-500/15');
+
+      const desc = card.querySelector('p');
+      if (desc) {
+        desc.classList.remove('text-[#a7f3d0]', 'font-medium');
+        desc.classList.add('text-[#9ca3af]');
+      }
+
+      const radio = card.querySelector('.level-radio');
+      if (radio) {
+        radio.classList.remove('bg-[#10b981]', 'text-[#002113]', 'shadow-sm', 'shadow-emerald-400/40');
+        radio.classList.add('bg-[#00251c]', 'border', 'border-emerald-500/20', 'text-[#86948a]');
+        const check = radio.querySelector('.material-symbols-outlined');
+        if (check) check.classList.add('hidden');
+      }
+    });
+
+    element.classList.add('is-selected', 'bg-[#064e3b]/75', 'border-2', 'border-[#4edea3]', 'ring-1', 'ring-[#4edea3]/30');
+    element.classList.remove('bg-[#064e3b]/30', 'border-emerald-500/15');
+
+    const activeDesc = element.querySelector('p');
+    if (activeDesc) {
+      activeDesc.classList.remove('text-[#9ca3af]');
+      activeDesc.classList.add('text-[#a7f3d0]', 'font-medium');
+    }
+
+    const activeRadio = element.querySelector('.level-radio');
+    if (activeRadio) {
+      activeRadio.classList.add('bg-[#10b981]', 'text-[#002113]', 'shadow-sm', 'shadow-emerald-400/40');
+      activeRadio.classList.remove('bg-[#00251c]', 'border', 'border-emerald-500/20', 'text-[#86948a]');
+      const check = activeRadio.querySelector('.material-symbols-outlined');
+      if (check) check.classList.remove('hidden');
+    }
+  }
+
+  function handleStartLearning() {
+    const btn = event.currentTarget;
+    btn.classList.add('opacity-80', 'scale-95');
+    setTimeout(() => {
+      btn.classList.remove('opacity-80', 'scale-95');
+    }, 200);
+  }
+</script></main></body></html>

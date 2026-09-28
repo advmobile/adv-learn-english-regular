@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-error-container': '#93000a', 'surface-container-lowest': '#ffffff', 'outline': '#6c7a71', 'primary': '#006c49', 'on-tertiary-container': '#00413c', 'tertiary-fixed-dim': '#80d5cb', 'surface-container': '#e9edff', 'on-tertiary-fixed-variant': '#00504a', 'deep-forest': '#064E3B', 'error-container': '#ffdad6', 'secondary': '#855300', 'surface-dim': '#d3daef', 'on-background': '#141b2b', 'secondary-fixed': '#ffddb8', 'primary-fixed-dim': '#4edea3', 'surface-container-low': '#f1f3ff', 'feedback-error': '#EF4444', 'background': '#f9f9ff', 'surface-container-highest': '#dce2f7', 'error': '#ba1a1a', 'solar-gold': '#FFB300', 'on-secondary': '#ffffff', 'on-error': '#ffffff', 'on-surface': '#141b2b', 'secondary-container': '#fea619', 'surface-variant': '#dce2f7', 'secondary-fixed-dim': '#ffb95f', 'mint-bg': '#F0FDF4', 'surface': '#f9f9ff', 'tertiary-container': '#5bb1a8', 'surface-bright': '#f9f9ff', 'on-primary-container': '#00422b', 'on-primary': '#ffffff', 'on-tertiary': '#ffffff', 'on-secondary-container': '#684000', 'primary-container': '#10b981', 'on-primary-fixed': '#002113', 'on-secondary-fixed-variant': '#653e00', 'feedback-info': '#3B82F6', 'teal-dark': '#0F766E', 'on-tertiary-fixed': '#00201d', 'feedback-success': '#10B981', 'tertiary-fixed': '#9cf2e8', 'on-primary-fixed-variant': '#005236', 'surface-container-high': '#e1e8fd', 'on-secondary-fixed': '#2a1700', 'inverse-on-surface': '#edf0ff', 'inverse-primary': '#4edea3', 'outline-variant': '#bbcabf', 'primary-fixed': '#6ffbbe', 'surface-white': '#FFFFFF', 'on-surface-variant': '#3c4a42', 'surface-tint': '#006c49', 'tertiary': '#006a63', 'inverse-surface': '#293040' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'gutter': '1rem', 'space-lg': '1.5rem', 'margin': '1.25rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-md': '1rem' }, 'fontFamily': { 'headline-sm': ['Plus Jakarta Sans'], 'label-ipa': ['Space Mono'], 'body-sm': ['Inter'], 'headline-lg': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Plus Jakarta Sans'], 'display-hero': ['Plus Jakarta Sans'], 'label-caption': ['Inter'], 'headline-md': ['Plus Jakarta Sans'], 'body-md': ['Inter'], 'body-lg': ['Inter'], 'label-badge': ['Plus Jakarta Sans'] }, 'fontSize': { 'headline-sm': ['16px', { lineHeight: '22px', fontWeight: '700' }], 'label-ipa': ['15px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '500' }], 'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.02em', fontWeight: '800' }], 'display-hero-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.02em', fontWeight: '800' }], 'display-hero': ['36px', { lineHeight: '44px', letterSpacing: '-0.03em', fontWeight: '800' }], 'label-caption': ['11px', { lineHeight: '14px', letterSpacing: '0.02em', fontWeight: '600' }], 'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '700' }], 'body-md': ['15px', { lineHeight: '22px', fontWeight: '400' }], 'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }], 'label-badge': ['12px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '700' }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;background-color:#F0FDF4;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-mint-bg text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-white/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs max-w-lg mx-auto"><div class="flex items-center gap-space-xs"><img alt="Learn English Basic App Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMsbGsjGz3n3_SLdm2lABcPp8n04rwpfU0GWkbH3oPZAJGx-mou1WL4-XNNQ2c0n6McD3b4HE-QNHUQYh_iKAmWx5uxcthsQR-IKqUAz4ScBoN_p5BcNRMn9XpI8FRkl2K4frGya3hjwoX6wTZJCCGhGLCiLwjJCqYcs4TW4lb-89heC-I82yTXJW-H1i2-_rt_rL_xcJy_-cVffTWCbQZ7qYfO0K0ZdGqjsyazKSb"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">Basic English</span><span class="font-label-caption text-label-caption text-on-surface-variant truncate max-w-[90px]">Profile</span></div></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-1 bg-amber-50 px-2 py-1 rounded-full shadow-[0_2px_6px_-1px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[15px] text-amber-600 font-bold">local_fire_department</span><span class="font-label-badge text-label-badge text-amber-800">7d</span></div><div class="flex items-center gap-1 bg-amber-100/60 px-2 py-1 rounded-full shadow-[0_2px_6px_-1px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-[14px] text-secondary font-bold">star</span><span class="font-label-badge text-label-badge text-secondary">350</span></div><button aria-label="Switch Language or Audio" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button aria-label="User Profile" class="w-11 h-11 flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Q6E8YRHB5JaBycdAbk01msX6A2-EH7Kr1gCu5Ggank_GO8Ld5qsKpRqAjMvWihgnf5Y892Gblyik1QVWd_8lMCFY23CRafO-MJ6L3j7YwFO1zYqhhbtz8U2fpXH1w1Y6MZNu25Y6GSytZhfci9PqLCPFtUDCtw-G_pGJzqDlkde7jr6q_tyPhprolC9HD6aCBlGiEhYef5LmgoqjlIwPhQ88Ddw2-xmPa4ZUyhtC"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 px-margin bg-mint-bg max-w-lg mx-auto min-h-screen"><div class="flex flex-col w-full pb-8 space-y-6">
+<!-- USER PROFILE CARD -->
+<section class="bg-surface-white rounded-3xl p-5 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.08),0_2px_6px_-1px_rgba(0,0,0,0.04)] relative overflow-hidden">
+<!-- Ambient emerald decoration flare -->
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-primary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-4 relative z-10">
+<!-- 3D Avatar with level badge -->
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-full overflow-hidden bg-primary-fixed p-1 shadow-md">
+<img alt="Nguyễn Minh An 3D Avatar" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Q6E8YRHB5JaBycdAbk01msX6A2-EH7Kr1gCu5Ggank_GO8Ld5qsKpRqAjMvWihgnf5Y892Gblyik1QVWd_8lMCFY23CRafO-MJ6L3j7YwFO1zYqhhbtz8U2fpXH1w1Y6MZNu25Y6GSytZhfci9PqLCPFtUDCtw-G_pGJzqDlkde7jr6q_tyPhprolC9HD6aCBlGiEhYef5LmgoqjlIwPhQ88Ddw2-xmPa4ZUyhtC"/>
+</div>
+<div class="absolute -bottom-1.5 -right-1.5 bg-deep-forest text-primary-fixed px-2 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-feedback-success" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-caption text-[10px] font-bold tracking-tight">Lv.4</span>
+</div>
+</div>
+<!-- Identity details -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface truncate">Nguyễn Minh An</h2>
+<span class="material-symbols-outlined text-feedback-success text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@minhan_learner</p>
+<div class="mt-2.5 flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1 bg-mint-bg px-2.5 py-1 rounded-full text-on-primary-container font-label-badge text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">spa</span>
+            Mầm xanh
+          </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-body-sm text-[11px]">
+<span class="material-symbols-outlined text-[13px]">calendar_today</span>
+            Tháng 03/2025
+          </span>
+</div>
+</div>
+</div>
+<!-- STAT COUNTERS GRID -->
+<div class="grid grid-cols-4 gap-2 mt-5 pt-4 bg-surface-container-low/60 rounded-2xl p-2.5">
+<!-- Streak -->
+<div class="flex flex-col items-center justify-center text-center p-1.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">7</span>
+<span class="font-label-caption text-[10px] text-on-surface-variant mt-0.5">Ngày Streak</span>
+</div>
+<!-- XP -->
+<div class="flex flex-col items-center justify-center text-center p-1.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">1.450</span>
+<span class="font-label-caption text-[10px] text-on-surface-variant mt-0.5">Tổng XP</span>
+</div>
+<!-- Words -->
+<div class="flex flex-col items-center justify-center text-center p-1.5">
+<div class="w-8 h-8 rounded-full bg-primary-fixed/40 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">180</span>
+<span class="font-label-caption text-[10px] text-on-surface-variant mt-0.5">Từ đã thuộc</span>
+</div>
+<!-- Leaderboard Rank -->
+<div class="flex flex-col items-center justify-center text-center p-1.5">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed/50 flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">Top 5%</span>
+<span class="font-label-caption text-[10px] text-on-surface-variant mt-0.5">Xếp hạng</span>
+</div>
+</div>
+</section>
+<!-- WEEKLY STUDY BAR CHART -->
+<section class="bg-surface-white rounded-3xl p-5 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.08),0_2px_6px_-1px_rgba(0,0,0,0.04)] flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Thời gian học tuần này</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Mục tiêu: 100 phút/tuần</p>
+</div>
+<div class="flex items-center gap-1 bg-mint-bg px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-feedback-success text-[16px]">trending_up</span>
+<span class="font-label-badge text-label-badge text-primary">+115%</span>
+</div>
+</div>
+<!-- Progress pill banner -->
+<div class="bg-gradient-to-r from-mint-bg to-surface-container-low rounded-2xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-feedback-success text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm font-semibold text-on-surface text-[12px]">Đạt 115 / 100 phút</span>
+<span class="font-label-caption text-on-surface-variant text-[11px]">Vượt chỉ tiêu tuần 15 phút 🎉</span>
+</div>
+</div>
+<div class="w-20 bg-surface-white rounded-full h-2.5 overflow-hidden p-0.5 shadow-inner">
+<div class="bg-primary h-full rounded-full w-full"></div>
+</div>
+</div>
+<!-- 7-Day Visual Bar Chart -->
+<div class="pt-3 pb-1">
+<div class="flex items-end justify-between h-36 px-1 gap-2">
+<!-- Mon: 15m (60%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 2', '15 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">15m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark to-primary-container rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-sm" style="height: 60%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">T2</span>
+</div>
+<!-- Tue: 20m (80%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 3', '20 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">20m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark to-primary-container rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-sm" style="height: 80%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">T3</span>
+</div>
+<!-- Wed: 10m (40%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 4', '10 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">10m</span>
+<div class="w-full max-w-[28px] bg-primary/20 rounded-t-xl transition-all duration-300 hover:brightness-110" style="height: 40%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">T4</span>
+</div>
+<!-- Thu: 25m (100% Star target) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 5', '25 phút (Kỷ lục tuần!)')">
+<span class="material-symbols-outlined text-solar-gold text-[12px] -mb-0.5">star</span>
+<span class="font-label-caption text-[10px] font-bold text-primary mb-1">25m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark via-primary to-primary-fixed-dim rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-md ring-2 ring-primary-fixed/50" style="height: 100%;"></div>
+<span class="font-body-sm text-body-sm text-primary font-bold mt-2">T5</span>
+</div>
+<!-- Fri: 15m (60%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 6', '15 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">15m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark to-primary-container rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-sm" style="height: 60%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">T6</span>
+</div>
+<!-- Sat: 18m (72%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Thứ 7', '18 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">18m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark to-primary-container rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-sm" style="height: 72%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">T7</span>
+</div>
+<!-- Sun: 12m (48%) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group cursor-pointer" onclick="selectDay('Chủ Nhật', '12 phút')">
+<span class="font-label-caption text-[10px] text-on-surface-variant mb-1.5 opacity-80 group-hover:opacity-100">12m</span>
+<div class="w-full max-w-[28px] bg-gradient-to-t from-teal-dark to-primary-container rounded-t-xl transition-all duration-300 hover:brightness-110 shadow-sm" style="height: 48%;"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2 font-medium">CN</span>
+</div>
+</div>
+<!-- Baseline axis -->
+<div class="h-1 bg-surface-container rounded-full w-full mt-1"></div>
+</div>
+<!-- Interactive mini feedback toast -->
+<div class="text-center py-1.5 px-3 bg-mint-bg rounded-xl text-primary font-body-sm text-[12px] font-medium transition-all" id="day-tooltip">
+      💡 Chạm vào từng cột để xem chi tiết thời gian luyện tập
+    </div>
+</section>
+<!-- ACHIEVEMENT BADGES GRID -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between px-1">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Danh hiệu &amp; Huy hiệu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">2/4 Huy hiệu đã mở khóa</p>
+</div>
+<button class="text-primary font-headline-sm text-body-sm hover:underline flex items-center gap-0.5" type="button">
+        Tất cả
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Badge 1: 🏆 Master of Basic Vocab (Unlocked) -->
+<div class="bg-surface-white rounded-3xl p-4 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.08),0_2px_6px_-1px_rgba(0,0,0,0.04)] relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-secondary-fixed/40 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed/60 flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface">Bậc thầy từ vựng</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 line-clamp-2">Thuộc 150+ từ vựng nền tảng A1.</p>
+</div>
+<div class="mt-3 flex items-center gap-1 text-secondary font-label-badge text-[11px]">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Đã đạt được
+        </div>
+</div>
+<!-- Badge 2: 🔥 Streak Hero 7d (Unlocked) -->
+<div class="bg-surface-white rounded-3xl p-4 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.08),0_2px_6px_-1px_rgba(0,0,0,0.04)] relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-4 -bottom-4 w-16 h-16 bg-amber-100 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center mb-3 shadow-inner">
+<span class="material-symbols-outlined text-amber-600 text-[28px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface">Chiến thần Streak 7d</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 line-clamp-2">Học liên tục 7 ngày không ngắt quãng.</p>
+</div>
+<div class="mt-3 flex items-center gap-1 text-amber-700 font-label-badge text-[11px]">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Đã đạt được
+        </div>
+</div>
+<!-- Badge 3: 🎙️ Native Pronunciation (In Progress: 8/10) -->
+<div class="bg-surface-white/80 rounded-3xl p-4 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[26px]">mic</span>
+</div>
+<span class="font-label-badge text-[10px] bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">8/10</span>
+</div>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface">Phát âm chuẩn bản xứ</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 line-clamp-2">10 bài phát âm đạt độ chuẩn &gt;90%.</p>
+</div>
+<div class="mt-3">
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<!-- Badge 4: ⚡ Light Speed Quiz (In Progress: 3/5) -->
+<div class="bg-surface-white/80 rounded-3xl p-4 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[26px]">flash_on</span>
+</div>
+<span class="font-label-badge text-[10px] bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant">3/5</span>
+</div>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface">Tốc độ ánh sáng</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1 line-clamp-2">5 bài quiz trả lời đúng tuyệt đối 100%.</p>
+</div>
+<div class="mt-3">
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- OFFLINE STATUS & APP SETTINGS -->
+<section class="bg-surface-white rounded-3xl p-5 shadow-[0_4px_20px_-2px_rgba(16,185,129,0.08),0_2px_6px_-1px_rgba(0,0,0,0.04)] space-y-4">
+<!-- IndexedDB Offline Storage Status Badge -->
+<div class="bg-mint-bg rounded-2xl p-3.5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[13px] text-primary">Đã đồng bộ Offline</span>
+<span class="w-2 h-2 rounded-full bg-feedback-success animate-pulse"></span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Lưu trên IndexedDB • Học không cần mạng</p>
+</div>
+</div>
+<button class="px-2.5 py-1.5 rounded-xl bg-surface-white text-primary text-[11px] font-headline-sm shadow-sm hover:bg-primary-fixed/30 transition-colors" onclick="triggerSync(this)" type="button">
+        Đồng bộ
+      </button>
+</div>
+<!-- Quick Settings List -->
+<div class="space-y-1 pt-1">
+<!-- Language switch -->
+<div class="flex items-center justify-between py-2.5 px-1 hover:bg-surface-container-low/50 rounded-2xl transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+</div>
+<div>
+<div class="font-body-md font-semibold text-on-surface text-[14px]">Ngôn ngữ giao diện</div>
+<div class="font-body-sm text-on-surface-variant text-[11px]">Tiếng Việt / English</div>
+</div>
+</div>
+<div class="flex items-center gap-1 text-primary font-headline-sm text-[12px] bg-primary-fixed/40 px-2.5 py-1 rounded-full">
+<span>Tiếng Việt</span>
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+</div>
+</div>
+<!-- Study Reminder Notification -->
+<div class="flex items-center justify-between py-2.5 px-1 hover:bg-surface-container-low/50 rounded-2xl transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">alarm</span>
+</div>
+<div>
+<div class="font-body-md font-semibold text-on-surface text-[14px]">Nhắc nhở học hàng ngày</div>
+<div class="font-body-sm text-on-surface-variant text-[11px]">20:00 mỗi tối</div>
+</div>
+</div>
+<!-- Toggle switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- App Settings Modal Trigger -->
+<div class="flex items-center justify-between py-2.5 px-1 hover:bg-surface-container-low/50 rounded-2xl transition-colors cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</div>
+<div>
+<div class="font-body-md font-semibold text-on-surface text-[14px]">Cài đặt tài khoản &amp; âm thanh</div>
+<div class="font-body-sm text-on-surface-variant text-[11px]">Tốc độ phát âm, hiệu ứng rung</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- SHARE PROGRESS / ACTION CTA -->
+<button class="w-full py-3.5 px-6 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-[0_12px_28px_-4px_rgba(16,185,129,0.35)] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span>Chia sẻ huy hiệu &amp; tiến độ học</span>
+</button>
+</div>
+<script>
+  function selectDay(dayName, timeText) {
+    const tip = document.getElementById('day-tooltip');
+    if (tip) {
+      tip.innerHTML = `✨ <strong>${dayName}</strong>: Bạn đã học <strong>${timeText}</strong>`;
+      tip.classList.add('bg-primary-fixed/40');
+      setTimeout(() => {
+        tip.classList.remove('bg-primary-fixed/40');
+      }, 1200);
+    }
+  }
+
+  function triggerSync(btn) {
+    const originalText = btn.innerText;
+    btn.innerText = 'Đang lưu...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerText = 'Đã xong!';
+      setTimeout(() => {
+        btn.innerText = originalText;
+        btn.disabled = false;
+      }, 1500);
+    }, 700);
+  }
+</script></main><div class="fixed bottom-0 w-full z-50 pointer-events-none pb-safe"><nav class="max-w-md mx-auto px-margin pb-3 pointer-events-auto" data-active-classes="bg-primary-container text-on-primary shadow-[0_4px_16px_-2px_rgba(16,185,129,0.35)]"><div class="bg-surface-white/90 backdrop-blur-xl rounded-full px-space-xs py-2 shadow-[0_20px_32px_-8px_rgba(15,118,110,0.16)] flex items-center justify-between"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 px-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-caption text-label-caption mt-0.5">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 px-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="learn" href="#"><span class="material-symbols-outlined text-[22px]">school</span><span class="font-label-caption text-label-caption mt-0.5">Learn</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 px-2 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="flashcards" href="#"><span class="material-symbols-outlined text-[22px]">style</span><span class="font-label-caption text-label-caption mt-0.5">Flashcard</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 px-2 rounded-full transition-all bg-primary-container text-on-primary shadow-[0_4px_16px_-2px_rgba(16,185,129,0.35)]" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-caption text-label-caption mt-0.5">Profile</span></a></div></nav></div></body></html>
