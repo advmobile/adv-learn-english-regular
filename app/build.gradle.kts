@@ -34,7 +34,8 @@ android {
         release {
             buildConfigField("String", "ADMOB_TEST_DEVICE_ID", "\"\"")
             buildConfigField("boolean", "SHOW_ADS", "true")
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
